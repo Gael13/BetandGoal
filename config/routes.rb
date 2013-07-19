@@ -1,4 +1,9 @@
 BetandGoal::Application.routes.draw do
+  root :to => "static#home" 
+
+  get "static/home"
+  get "static/help"
+  
   resources :players
 
   resources :users
